@@ -13,7 +13,6 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="right click"
         android:id="@+id/right-click-button"
         android:width="175dp"
         android:height="125dp"
@@ -23,12 +22,13 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/left-click-button"
-        android:layout_toRightOf="@+id/left-click-button" />
+        android:layout_toRightOf="@+id/left-click-button"
+        android:text="@string/right_click" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Left Click"
+        android:text="@string/left_click"
         android:id="@+id/left-click-button"
         android:width="175dp"
         android:height="125dp"
@@ -54,9 +54,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Mobile Mouse"
+        android:text="@string/app_name"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:inputType="text" />
 
 </RelativeLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mobile Mouse</string>
+    <string name="left_click">Left Click</string>
+    <string name="right_click">Right Click</string>
 </resources>
