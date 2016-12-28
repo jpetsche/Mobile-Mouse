@@ -10,12 +10,6 @@
     tools:context="com.example.jpetsche12.mobilemouse.MainActivity"
     android:background="@color/abc_btn_colored_borderless_text_material">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/textView" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +20,8 @@
         android:layout_alignParentStart="false"
         android:width="175dp"
         android:height="125dp"
-        android:background="#010101" />
+        android:background="#010101"
+        android:onClick="onButtonTap" />
 
     <Button
         android:layout_width="wrap_content"
@@ -38,5 +33,6 @@
         android:layout_alignParentEnd="true"
         android:width="175dp"
         android:height="125dp"
-        android:background="#020202" />
+        android:background="#020202"
+        android:onClick="onButtonTap" />
 </RelativeLayout>
