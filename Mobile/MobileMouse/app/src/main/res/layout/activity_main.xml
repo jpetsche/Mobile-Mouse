@@ -13,26 +13,50 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Left Click"
-        android:id="@+id/left-click-button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="false"
+        android:text="right click"
+        android:id="@+id/right-click-button"
         android:width="175dp"
         android:height="125dp"
-        android:background="#010101"
-        android:onClick="onButtonTap" />
+        android:background="#e30a0a"
+        android:onClick="onButtonTap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/left-click-button"
+        android:layout_toRightOf="@+id/left-click-button" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="right click"
-        android:id="@+id/right-click-button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
+        android:text="Left Click"
+        android:id="@+id/left-click-button"
         android:width="175dp"
         android:height="125dp"
-        android:background="#020202"
-        android:onClick="onButtonTap" />
+        android:background="#2ffd01"
+        android:onClick="onButtonTap"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <android.gesture.GestureOverlayView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gestureOverlayView"
+        android:layout_above="@+id/right-click-button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#3b3a3a"></android.gesture.GestureOverlayView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mobile Mouse"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

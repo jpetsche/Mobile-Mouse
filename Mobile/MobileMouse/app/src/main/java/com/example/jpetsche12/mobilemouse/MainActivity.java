@@ -11,10 +11,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onButtonTap(View v)
+    public void onButtonTap(view v)
     {
-        Toast myToast = Toast.makeText(getApplicationContext(),
-                                        "Click!", Toast.LENGTH_LONG);
+        toast myToast = toast.makeText(getApplicationContext(),
+                                        "Click!", toast.LENGTH_LONG);
         myToast.show();
     }
 }
