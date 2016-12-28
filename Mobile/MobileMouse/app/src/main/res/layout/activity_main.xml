@@ -7,10 +7,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jpetsche12.mobilemouse.MainActivity">
+    tools:context="com.example.jpetsche12.mobilemouse.MainActivity"
+    android:background="@color/abc_btn_colored_borderless_text_material">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left Click"
+        android:id="@+id/left-click-button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:width="175dp"
+        android:height="125dp"
+        android:background="#010101" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right click"
+        android:id="@+id/right-click-button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="175dp"
+        android:height="125dp"
+        android:background="#020202" />
 </RelativeLayout>
